@@ -1,0 +1,15 @@
+class technical:
+    def coding(self):
+        print("skill:coding in python")
+class nontechnical:
+    def management(self):
+        print("skil:project management")
+class employee(technical,nontechnical):
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print("employee name:{self.name}")
+emp=employee("rahul")
+emp.show_name()
+emp.coding()
+emp.management()
